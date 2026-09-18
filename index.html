@@ -69,6 +69,53 @@
       font-weight: 600 !important;
     }
     .nav-cta:hover { background: var(--primary-dark); color: #fff !important; }
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 40px;
+      height: 40px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 8px;
+    }
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: transform .25s, opacity .25s;
+    }
+    .nav-hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-hamburger.open span:nth-child(2) { opacity: 0; }
+    .nav-hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .nav-mobile {
+      display: none;
+      background: white;
+      border-top: 1px solid var(--border);
+      padding: 12px 24px 20px;
+    }
+    .nav-mobile.open { display: block; }
+    .nav-mobile a {
+      display: block;
+      padding: 12px 0;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-mobile a:last-child { border-bottom: none; padding-top: 16px; }
+    .nav-mobile .nav-cta {
+      display: inline-block;
+      padding: 10px 24px;
+      margin-top: 4px;
+      color: #fff !important;
+    }
 
     /* ── HERO ── */
     .hero {
@@ -359,6 +406,7 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
       .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
       .trio-inner { grid-template-columns: 1fr; gap: 48px; }
       .cta-box { padding: 48px 24px; }
       .hero-mockup { flex-direction: column; align-items: center; padding: 32px 20px; gap: 16px; }
@@ -382,6 +430,16 @@
       <li><a href="/terms">Regulamin</a></li>
       <li><a href="mailto:kontakt@klasso.io" class="nav-cta">Kontakt</a></li>
     </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="#funkcje" onclick="closeMobileMenu()">Funkcje</a>
+    <a href="#bezpieczenstwo" onclick="closeMobileMenu()">Bezpieczeństwo</a>
+    <a href="/privacy">Polityka prywatności</a>
+    <a href="/terms">Regulamin</a>
+    <a href="mailto:kontakt@klasso.io" class="nav-cta">Kontakt</a>
   </div>
 </nav>
 
@@ -589,5 +647,17 @@
   </div>
 </footer>
 
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMobile = document.getElementById('nav-mobile');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    navMobile.classList.toggle('open');
+  });
+  function closeMobileMenu() {
+    hamburger.classList.remove('open');
+    navMobile.classList.remove('open');
+  }
+</script>
 </body>
 </html>
