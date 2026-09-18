@@ -293,57 +293,6 @@
     .feature-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
     .feature-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
 
-    /* ── SCREENSHOTS ── */
-    .screenshots-section {
-      background: linear-gradient(180deg, #F8FAFC 0%, #EFF6FF 100%);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      overflow: hidden;
-    }
-    .screenshots-inner {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 96px 24px;
-    }
-    .screenshots-scroll {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding-bottom: 16px;
-      scroll-snap-type: x mandatory;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-    .screenshots-scroll::-webkit-scrollbar { display: none; }
-    .screenshot-item {
-      flex: 0 0 auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 16px;
-      scroll-snap-align: start;
-    }
-    .screenshot-frame {
-      width: 220px;
-      border-radius: 32px;
-      box-shadow: 0 20px 60px rgba(15,23,42,0.18), 0 0 0 2px rgba(15,23,42,0.06);
-      overflow: hidden;
-      background: white;
-    }
-    .screenshot-frame img {
-      width: 100%;
-      display: block;
-    }
-    .screenshot-label {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--muted);
-      text-align: center;
-    }
-    @media (min-width: 900px) {
-      .screenshot-frame { width: 190px; }
-    }
-
     /* ── TRIO ── */
     .trio-section {
       background: linear-gradient(135deg, #1E3A8A 0%, #4C1D95 100%);
@@ -600,59 +549,6 @@
     </div>
   </div>
 </section>
-
-<!-- SCREENSHOTS -->
-<div class="screenshots-section">
-  <div class="screenshots-inner">
-    <div class="section-label">Aplikacja</div>
-    <h2 class="section-title">Zobacz jak wygląda KLASSO</h2>
-    <p class="section-sub" style="margin-bottom:48px">Przejrzyste ekrany, logiczne menu, wszystko w jednym miejscu.</p>
-    <div class="screenshots-scroll">
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/start.jpg" alt="Start — ekran główny" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Start</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/klasa.jpg" alt="Klasa — zarządzanie klasą" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Klasa</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/przeglad.jpg" alt="Przegląd klasy" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Przegląd klasy</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/trojka.jpg" alt="Trójka klasowa" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Trójka klasowa</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/skladki.jpg" alt="Składki" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Składki</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/dodaj_uczniow.jpg" alt="Dodaj uczniów" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Import uczniów</span>
-      </div>
-      <div class="screenshot-item">
-        <div class="screenshot-frame">
-          <img src="/assets/screenshots/wiecej.jpg" alt="Więcej" loading="lazy" />
-        </div>
-        <span class="screenshot-label">Więcej</span>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- TRIO -->
 <div class="trio-section">
