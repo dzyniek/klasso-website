@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regulamin — KLASSO</title>
+  <meta name="description" content="Regulamin aplikacji KLASSO." />
+  <link rel="icon" type="image/svg+xml" href="/assets/klasso_icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563EB;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --text: #0F172A;
+      --text-secondary: #475569;
+    }
+    body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: var(--text); -webkit-font-smoothing: antialiased; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.9); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto; padding: 0 24px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 30px; }
+    .nav-back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 600; }
+    .nav-back:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(135deg, #F0FDF4 0%, #EFF6FF 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+    .hero p { font-size: 16px; color: var(--text-secondary); }
+
+    .content { max-width: 900px; margin: 0 auto; padding: 64px 24px 96px; }
+    .disclaimer {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 48px;
+      font-size: 13px;
+      color: #92400E;
+      line-height: 1.6;
+    }
+    .disclaimer strong { font-weight: 700; }
+
+    .section { margin-bottom: 48px; }
+    .section h2 {
+      font-size: 18px; font-weight: 700; margin-bottom: 16px;
+      padding-bottom: 12px; border-bottom: 2px solid var(--border);
+      color: var(--primary);
+    }
+    .section p, .section li { font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px; }
+    .section ul, .section ol { padding-left: 20px; }
+    .section li { margin-bottom: 8px; }
+    .section strong { color: var(--text); font-weight: 600; }
+
+    footer { border-top: 1px solid var(--border); background: white; }
+    .footer-inner {
+      max-width: 900px; margin: 0 auto; padding: 32px 24px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-copy { font-size: 13px; color: var(--muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/assets/klasso_logo.svg" alt="KLASSO" />
+    </a>
+    <a href="/" class="nav-back">← Strona główna</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Wchodzi w życie: 17 września 2026</div>
+    <h1>Regulamin</h1>
+    <p>Zasady korzystania z aplikacji mobilnej KLASSO.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="disclaimer">
+    <strong>⚠ Projekt — wymagany przegląd prawny przed publikacją.</strong> Niniejszy dokument stanowi projekt i powinien zostać zweryfikowany przez wykwalifikowanego prawnika przed użyciem w produkcji.
+  </div>
+
+  <div class="section">
+    <h2>§ 1. Postanowienia ogólne</h2>
+    <ol>
+      <li>Regulamin określa zasady korzystania z aplikacji mobilnej KLASSO (dalej: „Aplikacja"), świadczonej przez IT-Ready Dawid Fijoł, Ul. Wydmowa 6, 26-600 Radom (dalej: „Usługodawca").</li>
+      <li>Aplikacja KLASSO jest narzędziem wspierającym komunikację i organizację pracy trójek klasowych w polskich szkołach.</li>
+      <li>Korzystanie z Aplikacji oznacza akceptację niniejszego Regulaminu.</li>
+      <li>Wszelkie pytania dotyczące Regulaminu można kierować na adres: <strong>kontakt@klasso.io</strong></li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 2. Rejestracja i konto</h2>
+    <ol>
+      <li>Korzystanie z Aplikacji wymaga założenia konta. Rejestracja jest bezpłatna.</li>
+      <li>Użytkownikiem Aplikacji może być wyłącznie pełnoletnia osoba fizyczna — rodzic lub opiekun prawny ucznia.</li>
+      <li>Użytkownik zobowiązany jest do podania prawdziwych i aktualnych danych.</li>
+      <li>Użytkownik jest odpowiedzialny za bezpieczeństwo danych logowania i nie może ich udostępniać osobom trzecim.</li>
+      <li>Jedno konto może być przypisane do wielu klas jednocześnie.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 3. Zakres usług</h2>
+    <ol>
+      <li>Aplikacja jest dostępna bezpłatnie.</li>
+      <li>Usługodawca zastrzega sobie prawo do wprowadzenia w przyszłości płatnych funkcjonalności, po uprzednim powiadomieniu użytkowników.</li>
+      <li>Aplikacja umożliwia m.in.: komunikację w klasie (ogłoszenia, ankiety, wydarzenia), zarządzanie składkami klasowymi, przeglądanie listy uczniów (zakres zależy od roli użytkownika).</li>
+      <li>Usługodawca dąży do ciągłości działania Aplikacji, jednak nie gwarantuje jej dostępności bez przerw.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 4. Obowiązki użytkownika</h2>
+    <ol>
+      <li>Użytkownik korzysta z Aplikacji zgodnie z jej przeznaczeniem, obowiązującymi przepisami prawa i dobrymi obyczajami.</li>
+      <li>Zabronione jest:
+        <ul style="margin-top:8px">
+          <li>zamieszczanie treści niezgodnych z prawem, wulgarnych lub obraźliwych;</li>
+          <li>podejmowanie działań zakłócających działanie Aplikacji lub infrastruktury technicznej;</li>
+          <li>udostępnianie danych logowania osobom nieupoważnionym;</li>
+          <li>przetwarzanie danych innych użytkowników niezgodnie z RODO.</li>
+        </ul>
+      </li>
+      <li>Użytkownik wprowadzający dane dzieci oświadcza, że jest ich rodzicem lub opiekunem prawnym i jest uprawniony do przetwarzania tych danych w ramach Aplikacji.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 5. Ochrona danych osobowych</h2>
+    <p>Zasady przetwarzania danych osobowych określa <a href="/privacy" style="color:var(--primary);font-weight:600">Polityka Prywatności KLASSO</a>, dostępna również w sekcji O aplikacji w menu Więcej.</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 6. Odpowiedzialność</h2>
+    <ol>
+      <li>Usługodawca nie ponosi odpowiedzialności za treści publikowane przez użytkowników w Aplikacji.</li>
+      <li>Usługodawca nie ponosi odpowiedzialności za szkody wynikające z przerw w działaniu Aplikacji spowodowanych czynnikami zewnętrznymi (awarie infrastruktury, siła wyższa) lub pracami konserwacyjnymi.</li>
+      <li>Aplikacja służy wyłącznie do śledzenia statusów składek klasowych. Usługodawca nie przetwarza ani nie przechowuje danych płatniczych — wszelkie płatności odbywają się poza Aplikacją (gotówka, przelewy bankowe itp.).</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 7. Własność intelektualna</h2>
+    <p>Wszelkie prawa do Aplikacji KLASSO, w tym logo, grafiki, kod źródłowy i interfejs użytkownika, są własnością Usługodawcy lub są używane na podstawie stosownych licencji. Zabrania się kopiowania, modyfikowania lub rozpowszechniania jakichkolwiek elementów Aplikacji bez pisemnej zgody Usługodawcy.</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 8. Zmiany Regulaminu</h2>
+    <ol>
+      <li>Usługodawca zastrzega sobie prawo do zmiany Regulaminu.</li>
+      <li>O istotnych zmianach użytkownicy zostaną poinformowani przez powiadomienie w Aplikacji lub wiadomość e-mail na adres podany przy rejestracji.</li>
+      <li>Dalsze korzystanie z Aplikacji po wejściu w życie zmian oznacza akceptację nowego Regulaminu.</li>
+    </ol>
+  </div>
+
+  <div class="section">
+    <h2>§ 9. Postanowienia końcowe</h2>
+    <ol>
+      <li>W sprawach nieuregulowanych niniejszym Regulaminem stosuje się przepisy prawa polskiego, w szczególności Kodeksu Cywilnego oraz ustawy o świadczeniu usług drogą elektroniczną.</li>
+      <li>Sądem właściwym do rozstrzygania ewentualnych sporów jest sąd właściwy dla siedziby Usługodawcy.</li>
+    </ol>
+    <p>Niniejszy Regulamin wchodzi w życie z dniem 17.09.2026.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 IT-Ready Dawid Fijoł · kontakt@klasso.io</p>
+    <div class="footer-links">
+      <a href="/privacy">Polityka prywatności</a>
+      <a href="/terms">Regulamin</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

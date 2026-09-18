@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polityka prywatności — KLASSO</title>
+  <meta name="description" content="Polityka prywatności aplikacji KLASSO." />
+  <link rel="icon" type="image/svg+xml" href="/assets/klasso_icon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563EB;
+      --muted: #64748B;
+      --border: #E2E8F0;
+      --text: #0F172A;
+      --text-secondary: #475569;
+    }
+    body { font-family: 'Inter', sans-serif; background: #F8FAFC; color: var(--text); -webkit-font-smoothing: antialiased; }
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.9); backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 900px; margin: 0 auto; padding: 0 24px; height: 64px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { height: 30px; }
+    .nav-back { font-size: 14px; color: var(--primary); text-decoration: none; font-weight: 600; }
+    .nav-back:hover { text-decoration: underline; }
+
+    .hero {
+      background: linear-gradient(135deg, #EFF6FF 0%, #F5F3FF 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .hero-inner { max-width: 900px; margin: 0 auto; }
+    .hero-badge {
+      display: inline-block;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .hero h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; letter-spacing: -1px; margin-bottom: 12px; }
+    .hero p { font-size: 16px; color: var(--text-secondary); }
+
+    .content { max-width: 900px; margin: 0 auto; padding: 64px 24px 96px; }
+    .disclaimer {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 48px;
+      font-size: 13px;
+      color: #92400E;
+      line-height: 1.6;
+    }
+    .disclaimer strong { font-weight: 700; }
+
+    .section { margin-bottom: 48px; }
+    .section h2 {
+      font-size: 18px; font-weight: 700; margin-bottom: 16px;
+      padding-bottom: 12px; border-bottom: 2px solid var(--border);
+      color: var(--primary);
+    }
+    .section p, .section li { font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px; }
+    .section ul { padding-left: 20px; }
+    .section li { margin-bottom: 8px; }
+    .section strong { color: var(--text); font-weight: 600; }
+
+    footer {
+      border-top: 1px solid var(--border);
+      background: white;
+    }
+    .footer-inner {
+      max-width: 900px; margin: 0 auto; padding: 32px 24px;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .footer-copy { font-size: 13px; color: var(--muted); }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { font-size: 13px; color: var(--muted); text-decoration: none; }
+    .footer-links a:hover { color: var(--primary); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/assets/klasso_logo.svg" alt="KLASSO" />
+    </a>
+    <a href="/" class="nav-back">← Strona główna</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Ostatnia aktualizacja: 17 września 2026</div>
+    <h1>Polityka prywatności</h1>
+    <p>Dbamy o ochronę Twoich danych osobowych i przejrzystość ich przetwarzania.</p>
+  </div>
+</div>
+
+<div class="content">
+  <div class="disclaimer">
+    <strong>⚠ Projekt — wymagany przegląd prawny przed publikacją.</strong> Niniejszy dokument stanowi projekt i powinien zostać zweryfikowany przez wykwalifikowanego prawnika przed użyciem w produkcji.
+  </div>
+
+  <div class="section">
+    <h2>§ 1. Administrator danych</h2>
+    <p>Administratorem danych osobowych przetwarzanych w aplikacji KLASSO jest:</p>
+    <p><strong>IT-Ready Dawid Fijoł</strong><br />Ul. Wydmowa 6, 26-600 Radom<br />NIP: 5140309786</p>
+    <p>W sprawach dotyczących ochrony danych osobowych skontaktuj się z nami pod adresem: <strong>kontakt@klasso.io</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>§ 2. Jakie dane przetwarzamy</h2>
+    <p>W zależności od sposobu korzystania z aplikacji przetwarzamy następujące dane:</p>
+    <ul>
+      <li><strong>Dane konta</strong> — adres e-mail, imię i nazwisko, hasło przechowywane wyłącznie w formie skrótu kryptograficznego (hash).</li>
+      <li><strong>Dane profilu</strong> — imię i nazwisko użytkownika jako rodzica lub opiekuna.</li>
+      <li><strong>Dane dzieci</strong> — imię i nazwisko dziecka podane przez rodzica lub opiekuna prawnego.</li>
+      <li><strong>Dane klasy</strong> — nazwa szkoły i klasy, rola użytkownika (rodzic, Trójka klasowa: przewodniczący, zastępca, skarbnik).</li>
+      <li><strong>Dane aktywności</strong> — odpowiedzi w ankietach, potwierdzenia obecności na wydarzeniach, statusy składek, treści ogłoszeń.</li>
+      <li><strong>Dane techniczne</strong> — adres IP, typ urządzenia i systemu operacyjnego, zbierane automatycznie przez infrastrukturę w celach bezpieczeństwa.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>§ 3. Cel i podstawa prawna przetwarzania</h2>
+    <ul>
+      <li><strong>Rejestracja i prowadzenie konta</strong> — art. 6 ust. 1 lit. b RODO: niezbędność do wykonania umowy o świadczenie usług drogą elektroniczną.</li>
+      <li><strong>Zarządzanie klasą, ogłoszenia, ankiety, wydarzenia, składki</strong> — art. 6 ust. 1 lit. b RODO: realizacja funkcji aplikacji stanowiących przedmiot umowy.</li>
+      <li><strong>Dane dzieci wprowadzone przez rodzica</strong> — art. 6 ust. 1 lit. b RODO: niezbędność do wykonania umowy w zakresie powiązania konta rodzica z uczniem.</li>
+      <li><strong>Bezpieczeństwo i zapobieganie nadużyciom</strong> — art. 6 ust. 1 lit. f RODO: prawnie uzasadniony interes Administratora polegający na zapewnieniu integralności systemu.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>§ 4. Okres przechowywania danych</h2>
+    <ul>
+      <li><strong>Dane konta i profilu</strong> — przez czas trwania konta. Po usunięciu konta dane są usuwane lub anonimizowane w ciągu 30 dni, z wyjątkiem danych wymaganych przez przepisy prawa.</li>
+      <li><strong>Dane klasy</strong> (składki, ogłoszenia, ankiety, wydarzenia) — do momentu opuszczenia klasy przez użytkownika lub do usunięcia klasy przez administratora.</li>
+      <li><strong>Logi techniczne</strong> (zapisy dostępu, logi błędów) — do 90 dni.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>§ 5. Odbiorcy danych</h2>
+    <ul>
+      <li><strong>Supabase Inc.</strong> — dostawca infrastruktury bazy danych i uwierzytelniania. Dane są przechowywane na serwerach w regionie eu-central-1 (Frankfurt, Niemcy). Supabase działa na podstawie umowy powierzenia przetwarzania danych (DPA) zgodnej z RODO.</li>
+      <li><strong>Google LLC</strong> — w przypadku logowania przez konto Google (OAuth 2.0).</li>
+      <li><strong>Apple Inc.</strong> — w przypadku logowania przez Apple ID (Sign in with Apple).</li>
+      <li><strong>Administratorzy klasy (Trójka klasowa)</strong> — imię, nazwisko i statusy aktywności w klasie są widoczne dla administratorów klasy, do której należy użytkownik.</li>
+    </ul>
+    <p>Administrator nie sprzedaje danych osobowych użytkowników osobom trzecim.</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 6. Przekazywanie danych poza EOG</h2>
+    <p>Dane są przechowywane na serwerach zlokalizowanych na terytorium Europejskiego Obszaru Gospodarczego (Frankfurt, Niemcy).</p>
+    <p>W przypadku logowania przez Google lub Apple może dochodzić do przetwarzania danych poza EOG — na podstawie Standardowych Klauzul Umownych zatwierdzonych przez Komisję Europejską (art. 46 RODO).</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 7. Twoje prawa</h2>
+    <p>Na podstawie RODO przysługują Ci następujące prawa:</p>
+    <ul>
+      <li><strong>Prawo dostępu (art. 15)</strong> — prawo do uzyskania informacji o przetwarzanych danych.</li>
+      <li><strong>Prawo do sprostowania (art. 16)</strong> — prawo do poprawienia nieprawidłowych lub uzupełnienia niekompletnych danych.</li>
+      <li><strong>Prawo do usunięcia (art. 17)</strong> — możesz samodzielnie usunąć swoje konto w sekcji Moje konto → Usuń konto.</li>
+      <li><strong>Prawo do ograniczenia przetwarzania (art. 18)</strong> — prawo do żądania ograniczenia przetwarzania danych w określonych sytuacjach.</li>
+      <li><strong>Prawo do przenoszenia danych (art. 20)</strong> — prawo do otrzymania danych w ustrukturyzowanym, powszechnie używanym formacie.</li>
+      <li><strong>Prawo do sprzeciwu (art. 21)</strong> — prawo do sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie Administratora.</li>
+      <li><strong>Prawo do skargi</strong> — możesz wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</li>
+    </ul>
+    <p>Aby skorzystać z przysługujących Ci praw, skontaktuj się z nami: <strong>kontakt@klasso.io</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>§ 8. Bezpieczeństwo danych</h2>
+    <ul>
+      <li>Hasła przechowywane wyłącznie w formie skrótu kryptograficznego (hash).</li>
+      <li>Szyfrowanie transmisji danych protokołem TLS.</li>
+      <li>Ograniczenie dostępu do danych przez mechanizmy Row-Level Security (RLS) na poziomie bazy danych — każdy użytkownik widzi wyłącznie dane przypisane do jego klas.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>§ 9. Pliki cookie</h2>
+    <p>Aplikacja mobilna KLASSO nie korzysta z plików cookie. Dostawcy usług zewnętrznych (Supabase, Google) mogą stosować własne mechanizmy śledzące zgodnie z ich politykami prywatności.</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 10. Zmiany Polityki Prywatności</h2>
+    <p>O wszelkich istotnych zmianach będziemy informować poprzez powiadomienie w aplikacji lub wiadomość e-mail na adres podany przy rejestracji. Aktualna wersja Polityki Prywatności jest zawsze dostępna w sekcji O aplikacji w menu Więcej.</p>
+  </div>
+
+  <div class="section">
+    <h2>§ 11. Kontakt</h2>
+    <p><strong>IT-Ready Dawid Fijoł</strong><br />Ul. Wydmowa 6, 26-600 Radom<br />NIP: 5140309786<br />E-mail: <strong>kontakt@klasso.io</strong></p>
+    <p>Niniejsza Polityka Prywatności obowiązuje od dnia 17.09.2026.</p>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <p class="footer-copy">© 2026 IT-Ready Dawid Fijoł · kontakt@klasso.io</p>
+    <div class="footer-links">
+      <a href="/privacy">Polityka prywatności</a>
+      <a href="/terms">Regulamin</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

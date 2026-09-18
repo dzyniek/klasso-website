@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520">
+<defs>
+ <linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2F80ED"/><stop offset="1" stop-color="#5BC0EB"/></linearGradient>
+ <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#21B573"/><stop offset="1" stop-color="#66D36E"/></linearGradient>
+ <linearGradient id="o" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FF9F1C"/><stop offset="1" stop-color="#FF6B5E"/></linearGradient>
+ <linearGradient id="v" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#7B4DFF"/><stop offset="1" stop-color="#B47CFF"/></linearGradient>
+</defs>
+<!-- three people -->
+<circle cx="180" cy="92" r="38" fill="url(#b)"/><path d="M102 178 Q180 118 258 178 L246 235 Q180 188 114 235Z" fill="url(#b)"/>
+<circle cx="300" cy="55" r="43" fill="url(#g)"/><path d="M214 145 Q300 82 386 145 L365 213 Q300 161 235 213Z" fill="url(#g)"/>
+<circle cx="420" cy="92" r="38" fill="url(#o)"/><path d="M342 178 Q420 118 498 178 L486 235 Q420 188 354 235Z" fill="url(#o)"/>
+<!-- open book -->
+<path d="M52 245 Q168 190 300 252 Q432 190 548 245 L300 322 Q168 264 52 300Z" fill="url(#b)"/>
+<path d="M52 300 Q168 264 300 322 Q432 264 548 300 L300 350 Q168 295 52 330Z" fill="url(#v)"/>
+<!-- wordmark: KL + pencil + SSO -->
+<text x="255" y="438" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900" fill="#17355E">KL</text>
+<text x="345" y="438" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="88" font-weight="900" fill="#17355E">SSO</text>
+<!-- single pencil replacing 'A' -->
+<g transform="translate(300, 404) rotate(-20)">
+  <rect x="-13" y="-48" width="26" height="74" rx="4" fill="#FFB52E"/>
+  <rect x="4"   y="-48" width="8"  height="74" rx="2" fill="#FFC94A" opacity="0.6"/>
+  <polygon points="-13,26 13,26 0,52" fill="#F2D2A2"/>
+  <polygon points="-4.5,44 4.5,44 0,52" fill="#333333"/>
+  <rect x="-13" y="-58" width="26" height="12" rx="2" fill="#BBBBBB"/>
+  <rect x="-11" y="-72" width="22" height="16" rx="5" fill="#FF88BB"/>
+</g>
+<text x="300" y="488" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="600" fill="#60708D">Nasza klasa. Jedno miejsce.</text>
+</svg>
