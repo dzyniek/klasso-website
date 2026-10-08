@@ -105,13 +105,17 @@
 
 <div class="hero">
   <div class="hero-inner">
-    <div class="hero-badge">Ostatnia aktualizacja: 17 września 2026</div>
+    <div class="hero-badge">Ostatnia aktualizacja: 8 października 2026</div>
     <h1>Polityka prywatności</h1>
     <p>Dbamy o ochronę Twoich danych osobowych i przejrzystość ich przetwarzania.</p>
   </div>
 </div>
 
 <div class="content">
+  <div class="disclaimer">
+    <strong>⚠ Dokument poglądowy — wymaga przeglądu prawnego przed publikacją.</strong> Niniejsza polityka prywatności stanowi projekt dokumentu. Przed każdą istotną zmianą treści lub publicznym udostępnieniem wymagana jest weryfikacja przez wykwalifikowanego prawnika.
+  </div>
+
   <div class="section">
     <h2>§ 1. Administrator danych</h2>
     <p>Administratorem danych osobowych przetwarzanych w aplikacji KLASSO jest:</p>
@@ -128,6 +132,8 @@
       <li><strong>Dane dzieci</strong> — imię i nazwisko dziecka podane przez rodzica lub opiekuna prawnego.</li>
       <li><strong>Dane klasy</strong> — nazwa szkoły i klasy, rola użytkownika (rodzic, Trójka klasowa: przewodniczący, zastępca, skarbnik).</li>
       <li><strong>Dane aktywności</strong> — odpowiedzi w ankietach, potwierdzenia obecności na wydarzeniach, statusy składek, treści ogłoszeń.</li>
+      <li><strong>Token powiadomień push</strong> — unikalny identyfikator urządzenia generowany przez Firebase Cloud Messaging (FCM), służący wyłącznie do dostarczania powiadomień w Aplikacji. Token jest powiązany z kontem użytkownika i usuwany przy wylogowaniu lub usunięciu konta.</li>
+      <li><strong>Dane diagnostyczne (logi awarii)</strong> — w wersji produkcyjnej Aplikacji zbierane są automatycznie przez Firebase Crashlytics: model urządzenia, wersja systemu operacyjnego, wersja Aplikacji, czas i miejsce wystąpienia błędu w kodzie (stack trace), anonimowy identyfikator instalacji. Dane te służą wyłącznie do identyfikacji i naprawy błędów.</li>
       <li><strong>Dane techniczne</strong> — adres IP, typ urządzenia i systemu operacyjnego, zbierane automatycznie przez infrastrukturę w celach bezpieczeństwa.</li>
     </ul>
   </div>
@@ -138,6 +144,8 @@
       <li><strong>Rejestracja i prowadzenie konta</strong> — art. 6 ust. 1 lit. b RODO: niezbędność do wykonania umowy o świadczenie usług drogą elektroniczną.</li>
       <li><strong>Zarządzanie klasą, ogłoszenia, ankiety, wydarzenia, składki</strong> — art. 6 ust. 1 lit. b RODO: realizacja funkcji aplikacji stanowiących przedmiot umowy.</li>
       <li><strong>Dane dzieci wprowadzone przez rodzica</strong> — art. 6 ust. 1 lit. b RODO: niezbędność do wykonania umowy w zakresie powiązania konta rodzica z uczniem.</li>
+      <li><strong>Powiadomienia push (token FCM)</strong> — art. 6 ust. 1 lit. a RODO: zgoda wyrażona przez użytkownika w systemowym oknie dialogowym systemu iOS lub Android. Zgoda jest dobrowolna — Aplikacja pozostaje w pełni funkcjonalna bez udzielenia zgody na powiadomienia. Zgodę można wycofać w dowolnym momencie w ustawieniach urządzenia (Ustawienia → Powiadomienia → KLASSO).</li>
+      <li><strong>Diagnostyka i raporty awarii (Firebase Crashlytics)</strong> — art. 6 ust. 1 lit. f RODO: prawnie uzasadniony interes Administratora polegający na zapewnieniu stabilności i jakości Aplikacji poprzez identyfikację i naprawę błędów technicznych. Crashlytics jest aktywny wyłącznie w wersji produkcyjnej i przetwarza wyłącznie anonimowe dane diagnostyczne niezbędne do lokalizacji błędu.</li>
       <li><strong>Bezpieczeństwo i zapobieganie nadużyciom</strong> — art. 6 ust. 1 lit. f RODO: prawnie uzasadniony interes Administratora polegający na zapewnieniu integralności systemu.</li>
     </ul>
   </div>
@@ -147,15 +155,18 @@
     <ul>
       <li><strong>Dane konta i profilu</strong> — przez czas trwania konta. Po usunięciu konta dane są usuwane lub anonimizowane w ciągu 30 dni, z wyjątkiem danych wymaganych przez przepisy prawa.</li>
       <li><strong>Dane klasy</strong> (składki, ogłoszenia, ankiety, wydarzenia) — do momentu opuszczenia klasy przez użytkownika lub do usunięcia klasy przez administratora.</li>
-      <li><strong>Logi techniczne</strong> (zapisy dostępu, logi błędów) — do 90 dni.</li>
+      <li><strong>Logi techniczne</strong> (zapisy dostępu, logi błędów infrastruktury) — do 90 dni.</li>
+      <li><strong>Dane diagnostyczne Firebase Crashlytics</strong> (logi awarii) — do 90 dni po stronie Google, zgodnie z polityką retencji Firebase.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>§ 5. Odbiorcy danych</h2>
     <ul>
-      <li><strong>Supabase Inc.</strong> — dostawca infrastruktury bazy danych i uwierzytelniania. Dane są przechowywane na serwerach w regionie eu-central-1 (Frankfurt, Niemcy). Supabase działa na podstawie umowy powierzenia przetwarzania danych (DPA) zgodnej z RODO.</li>
-      <li><strong>Google LLC</strong> — w przypadku logowania przez konto Google (OAuth 2.0).</li>
+      <li><strong>Supabase Inc.</strong> — dostawca infrastruktury bazy danych i uwierzytelniania. Dane są przechowywane na serwerach w regionie eu-central-1 (Frankfurt, Niemcy), tj. na terytorium Unii Europejskiej. Supabase działa na podstawie umowy powierzenia przetwarzania danych (Data Processing Agreement) zgodnej z RODO.</li>
+      <li><strong>Google LLC (Firebase Cloud Messaging)</strong> — usługa powiadomień push. FCM przetwarza token urządzenia w celu dostarczenia powiadomień. Token nie zawiera danych osobowych i jest generowany lokalnie przez system operacyjny.</li>
+      <li><strong>Google LLC (Firebase Crashlytics)</strong> — usługa raportowania awarii, aktywna wyłącznie w wersji produkcyjnej Aplikacji. Crashlytics przetwarza anonimowe dane diagnostyczne (model urządzenia, wersja systemu, stack trace) w celu identyfikacji błędów. Przetwarzanie przez Google podlega Polityce Prywatności Google (policies.google.com/privacy).</li>
+      <li><strong>Google LLC (OAuth 2.0)</strong> — w przypadku logowania przez konto Google. Przetwarzanie przez Google podlega Polityce Prywatności Google (policies.google.com/privacy).</li>
       <li><strong>Apple Inc.</strong> — w przypadku logowania przez Apple ID (Sign in with Apple).</li>
       <li><strong>Administratorzy klasy (Trójka klasowa)</strong> — imię, nazwisko i statusy aktywności w klasie są widoczne dla administratorów klasy, do której należy użytkownik.</li>
     </ul>
@@ -164,8 +175,9 @@
 
   <div class="section">
     <h2>§ 6. Przekazywanie danych poza EOG</h2>
-    <p>Dane są przechowywane na serwerach zlokalizowanych na terytorium Europejskiego Obszaru Gospodarczego (Frankfurt, Niemcy).</p>
-    <p>W przypadku logowania przez Google lub Apple może dochodzić do przetwarzania danych poza EOG — na podstawie Standardowych Klauzul Umownych zatwierdzonych przez Komisję Europejską (art. 46 RODO).</p>
+    <p>Dane konta i klasy są przechowywane na serwerach zlokalizowanych na terytorium Europejskiego Obszaru Gospodarczego (Frankfurt, Niemcy — Supabase).</p>
+    <p>Dane diagnostyczne (Firebase Crashlytics), tokeny powiadomień push (Firebase Cloud Messaging) oraz dane uwierzytelniania Google (OAuth 2.0) są przetwarzane przez Google LLC, której serwery mogą znajdować się poza EOG. Dane logowania Apple (Sign in with Apple) mogą być przetwarzane przez Apple Inc. poza EOG.</p>
+    <p>Transfer do Google LLC odbywa się na podstawie decyzji Komisji Europejskiej o adekwatności ochrony w ramach programu EU-US Data Privacy Framework (DPF), obowiązującej od 10 lipca 2023 r. Google LLC jest certyfikowanym uczestnikiem DPF. Więcej informacji: privacyshield.gov oraz safety.google/intl/pl/privacy/. Transfer do Apple Inc. odbywa się na podstawie Standardowych Klauzul Umownych (art. 46 RODO).</p>
   </div>
 
   <div class="section">
@@ -177,8 +189,9 @@
       <li><strong>Prawo do usunięcia (art. 17)</strong> — możesz samodzielnie usunąć swoje konto w sekcji Moje konto → Usuń konto.</li>
       <li><strong>Prawo do ograniczenia przetwarzania (art. 18)</strong> — prawo do żądania ograniczenia przetwarzania danych w określonych sytuacjach.</li>
       <li><strong>Prawo do przenoszenia danych (art. 20)</strong> — prawo do otrzymania danych w ustrukturyzowanym, powszechnie używanym formacie.</li>
-      <li><strong>Prawo do sprzeciwu (art. 21)</strong> — prawo do sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie Administratora.</li>
-      <li><strong>Prawo do skargi</strong> — możesz wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</li>
+      <li><strong>Prawo do sprzeciwu (art. 21)</strong> — prawo do sprzeciwu wobec przetwarzania opartego na uzasadnionym interesie Administratora (dotyczy m.in. raportowania awarii przez Firebase Crashlytics).</li>
+      <li><strong>Wycofanie zgody na powiadomienia push</strong> — zgodę na powiadomienia możesz wycofać w dowolnym momencie w ustawieniach systemowych urządzenia (Ustawienia → Powiadomienia → KLASSO). Wycofanie zgody nie wpływa na możliwość korzystania z Aplikacji.</li>
+      <li><strong>Prawo do skargi</strong> — jeśli uważasz, że Twoje dane są przetwarzane niezgodnie z prawem, możesz wnieść skargę do Prezesa Urzędu Ochrony Danych Osobowych (uodo.gov.pl).</li>
     </ul>
     <p>Aby skorzystać z przysługujących Ci praw, skontaktuj się z nami: <strong>kontakt@klasso.io</strong></p>
   </div>
@@ -189,12 +202,17 @@
       <li>Hasła przechowywane wyłącznie w formie skrótu kryptograficznego (hash).</li>
       <li>Szyfrowanie transmisji danych protokołem TLS.</li>
       <li>Ograniczenie dostępu do danych przez mechanizmy Row-Level Security (RLS) na poziomie bazy danych — każdy użytkownik widzi wyłącznie dane przypisane do jego klas.</li>
+      <li>Firebase Crashlytics aktywny wyłącznie w wersji produkcyjnej Aplikacji (nie w środowiskach deweloperskich i testowych) — dane diagnostyczne nie są zbierane podczas tworzenia ani testowania Aplikacji.</li>
+      <li>Tokeny powiadomień push nie są udostępniane poza infrastrukturę Firebase i są usuwane przy wylogowaniu lub usunięciu konta.</li>
     </ul>
   </div>
 
   <div class="section">
-    <h2>§ 9. Pliki cookie</h2>
-    <p>Aplikacja mobilna KLASSO nie korzysta z plików cookie. Dostawcy usług zewnętrznych (Supabase, Google) mogą stosować własne mechanizmy śledzące zgodnie z ich politykami prywatności.</p>
+    <h2>§ 9. Pliki cookie i podobne technologie</h2>
+    <p>Aplikacja mobilna KLASSO nie korzysta z plików cookie.</p>
+    <p>Aplikacja korzysta z tokenu sesji Supabase (przechowywanego lokalnie na urządzeniu) w celu utrzymania zalogowanej sesji użytkownika — token ten jest niezbędny do działania Aplikacji i nie służy celom śledzenia ani reklamowym.</p>
+    <p>Token powiadomień push (FCM) jest generowany przez system operacyjny urządzenia po wyrażeniu zgody na powiadomienia i służy wyłącznie do dostarczania powiadomień z Aplikacji. Nie jest wykorzystywany do śledzenia aktywności użytkownika.</p>
+    <p>Dostawcy usług zewnętrznych (Supabase, Google Firebase) mogą stosować własne mechanizmy techniczne zgodnie ze swoimi politykami prywatności.</p>
   </div>
 
   <div class="section">
